@@ -153,6 +153,7 @@ export function launch(panes = 4): string {
   run("set-option", "-t", sessionName, "mouse", "on");
   run("set-option", "-t", sessionName, "pane-border-status", "top");
   run("set-option", "-t", sessionName, "pane-border-format", " #{pane_title} ");
+  run("set-option", "-t", sessionName, "pane-border-lines", "double");
   run("set-option", "-t", sessionName, "set-titles", "off");
   run("set-option", "-t", sessionName, "automatic-rename", "off");
 

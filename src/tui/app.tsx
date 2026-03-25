@@ -877,12 +877,9 @@ export function App(): React.ReactElement {
       ) : (
         <Box flexDirection="column">
           {cards.map((card, i) => (
-            <Box key={card.name} flexDirection="row">
-              <Text>{" "}</Text>
-              <Box flexDirection="column">
-                <CardView card={card} selected={i === cursor} width={cardWidth - 2} tick={tick} index={i + 1} />
-                {i < cards.length - 1 && <Text> </Text>}
-              </Box>
+            <Box key={card.name} flexDirection="column">
+              <CardView card={card} selected={i === cursor} width={cardWidth} tick={tick} index={i + 1} />
+              {i < cards.length - 1 && <Text> </Text>}
             </Box>
           ))}
         </Box>
