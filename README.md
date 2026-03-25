@@ -5,33 +5,43 @@ A tmux dashboard for managing multiple [Claude Code](https://docs.anthropic.com/
 Running Claude in 4 terminals at once? Pitboss shows you which one's busy, which one's done, and which one needs your attention — all in a sidebar.
 
 ```
-━━━━━━━━━━━ ┏━┓╻╺┳╸┏┓ ┏━┓┏━┓┏━┓ ━━━━━━━━━━━
-            ┣━┛┃ ┃ ┣┻┓┃ ┃┗━┓┗━┓
-━━━━━━━━━━━ ╹  ╹ ╹ ┗━┛┗━┛┗━┛┗━┛ ━━━━━━━━━━━
+ ━━━━━━━━━━━━━━━┏━┓╻╺┳╸┏┓ ┏━┓┏━┓┏━┓━━━━━━━━━━━━━━━━
+                ┣━┛┃ ┃ ┣┻┓┃ ┃┗━┓┗━┓
+ ━━━━━━━━━━━━━━━╹  ╹ ╹ ┗━┛┗━┛┗━┛┗━┛━━━━━━━━━━━━━━━━
 
-╭ › 1. weather-api ──────── 42s  ⎇ main ╮
-│ ⠹ claude bash                          │
-├────────────────────────────────────────┤
-│ http://localhost:8080                  │
-├────────────────────────────────────────┤
-│ +127 -34                              │
-├────────────────────────────────────────┤
-│ ☐ add forecast caching layer          │
-│ ☐ rate limiting for free tier         │
-╰────────────────────────────────────────╯
+ ╭› 1. weather-api ────────── 42s  ⎇ main ╮
+ │ ⠹ clauding…                             │
+ ├──────────────────────────────────────────┤
+ │ http://localhost:8080                    │
+ ├──────────────────────────────────────────┤
+ │ +127 -34                                 │
+ ├──────────────────────────────────────────┤
+ │ ☐ add forecast caching layer             │
+ │ ☐ rate limiting for free tier            │
+ ╰──────────────────────────────────────────╯
 
-╭   2. pixel-editor ─── took 3m  ⎇ main ╮
-│ ✓ claude done                          │
-├────────────────────────────────────────┤
-│ ☐ undo/redo for brush strokes         │
-│ ☐ export as SVG                       │
-╰────────────────────────────────────────╯
+ ╭  2. pixel-editor ──── took 3m  ⎇ main  ╮
+ │ ✓ claude done                            │
+ ├──────────────────────────────────────────┤
+ │ ☐ undo/redo for brush strokes            │
+ │ ☐ export as SVG                          │
+ ╰──────────────────────────────────────────╯
 
-╭   3. recipe-app ──────── 12s  ⎇ main  ╮
-│ ...claude thinking                     │
-├────────────────────────────────────────┤
-│ a: add todo                           │
-╰────────────────────────────────────────╯
+ ╭  3. recipe-app ──────── 12s  ⎇ main    ╮
+ │ ◆ claude thinking                        │
+ ├──────────────────────────────────────────┤
+ │ +42 -8                                   │
+ ├──────────────────────────────────────────┤
+ │ ☐ add ingredient search                  │
+ │ ☐ fix serving size calculator            │
+ │ ☐ export shopping list                   │
+ ╰──────────────────────────────────────────╯
+
+ ╭  4. blog ─────────────────────── ⎇ main ╮
+ │ ◇ claude waiting                         │
+ ├──────────────────────────────────────────┤
+ │ a: add todo                              │
+ ╰──────────────────────────────────────────╯
 ```
 
 ## Layout
