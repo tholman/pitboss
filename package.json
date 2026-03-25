@@ -1,0 +1,49 @@
+{
+  "name": "pitboss",
+  "version": "0.1.0",
+  "description": "Terminal dashboard for managing multiple Claude Code sessions via tmux",
+  "type": "module",
+  "bin": {
+    "pitboss": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "hooks"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tholman/pitboss"
+  },
+  "bugs": {
+    "url": "https://github.com/tholman/pitboss/issues"
+  },
+  "homepage": "https://github.com/tholman/pitboss",
+  "keywords": [
+    "tmux",
+    "claude",
+    "claude-code",
+    "dashboard",
+    "tui",
+    "terminal"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "ink": "^5.1.0",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.9"
+  },
+  "author": "Tim Holman",
+  "license": "MIT"
+}
